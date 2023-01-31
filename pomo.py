@@ -80,7 +80,7 @@ def empty(type, tally):
     else:
         delay = 515
  
-    if ((tally & 3) == 0):
+    if ((tally & 3) == 0) and type == "rest":
         delay = 2058
     
     #blink out one pixel at a time
